@@ -1,102 +1,155 @@
-.container:hover .whenhover,
-.container.active .whenhover {
-    opacity: 1;
-}
-.container .text {
-    text-align: center;
-    font-size: 18px;
-    display: inline-block;
+.placeimg{
+    height: 150px;
+    width: 150px;
+    border-radius: 25%;
+    box-shadow: 10px 10px 10px grey;
+  }
+  .body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    margin-bottom: 50px !important;
+    background-color: #e0e0e0;
+  }
+  #content-1{
+  background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
+  height: 380px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 50px;
+  
+  
+  }
+  #search-bar{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
- }
-.container .whenhover {
-    opacity: 0;   
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    padding: 15px;
-    transition: all 0.4s ease-in-out 0s;
-
-}
- .whenhover .text{
-    color:#fff;
-}
-.cityImage {
-    height:150px;
-    width: 150px;
-    border-radius: 25%;
-    box-shadow:10px 10px 10px 0px grey;
-}
-#boxStyle:focus {
-    outline:none;
- }
-.textStyle {
-     text-decoration: none;
-    color: black;
-    font-weight: bold;
- }
-
-.cityImageStyle{
-    margin-left: 12%; 
-    margin-right: 12%;
-    align-items: center;
+    transform: translate(-50%,-50%);
+    width: 25%;
+    border: 1px solid transparent;
+    background-color: #f1f1f1; 
+    outline: none;
+    padding : 10px; 
+    font-size: 16px; 
+    border-radius: 12px; 
+    text-align: start ;
+  }
+  #content-2{
     display: flex;
-    justify-content: space-between;
-    padding: 4%
-}
-
-.container,
-.container * {
-     box-sizing: border-box;
-}
-
-.container {
-     position: relative;
-    display: inline-block;
-    overflow: hidden;
-    max-width: 100%;
-    height: auto;
-    border-radius: 25%;
-    box-shadow:10px 10px 10px 0px grey;
-}
-
-.container img {
-     max-width: 100%;
-    } 
-.container .cityImage {
-    display: block;
-    } 
-#boxStyle {
-    margin: 15% 35%;
-    border-radius: 12px;
-    border:1px solid transparent;
-    background-color: #f1f1f1;
-    padding: 10px;
-    font-size: 16px;
-     width: 30%;
-}
- #backImage{
-    background-image:url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
-    height: 380px;
-    width: 100%;
-     background-size: cover;
-     background-repeat: no-repeat;
-    -ms-background-position-x: center;
-    -ms-background-position-y: center;
-    background-position: center ;
-    overflow: hidden;
-}
-.view-more{
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    color: black;
-}
+  
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  #content-3{
+  display: flex;
+  
+  flex-direction: row;
+  justify-content: space-evenly;
+  display: none;
+  }
+  
+  .container1{
+  padding-left: 35% !important;
+  }
+  .text1Sty{
+  position: relative;
+  bottom: 45%;
+  left:22%;
+  color: #f1f1f1;
+  visibility: hidden;
+  }
+  .text2Sty{
+  position: relative;
+  bottom: 45%;
+  left:25%;
+  color: #f1f1f1; 
+  visibility: hidden;
+  }
+  .text3Sty{
+  position: relative;
+  bottom: 45%;
+  left:16%;
+  color: #f1f1f1;
+  visibility: hidden;
+  }
+  .text4Sty{
+  position: relative;
+  bottom: 45%;
+  left:20%;
+  color: #f1f1f1;
+  visibility: hidden;
+  }
+  .text5Sty{
+  position: relative;
+  bottom: 45%;
+  left:20%;
+  color: #f1f1f1;
+  visibility: hidden;
+  }
+  .text6Sty{
+  position: relative;
+  bottom: 45%;
+  left:22%;
+  color: #f1f1f1; 
+  visibility: hidden;
+  }
+  .text7Sty{
+  position: relative;
+  bottom: 45%;
+  left:21%;
+  color: #f1f1f1;
+  visibility: hidden;
+  }
+  .text8Sty{
+  position: relative;
+  bottom: 45%;
+  left:17%;
+  color: #f1f1f1;
+  visibility: hidden;
+  }
+  .placeimg:hover{
+  filter: brightness(50%); 
+  
+  }
+  .placeimg:hover + .text1Sty {
+  visibility: visible;
+  }
+  .placeimg:hover + .text2Sty {
+  visibility: visible;
+  }
+  .placeimg:hover + .text3Sty {
+  visibility: visible;
+  }
+  .placeimg:hover + .text4Sty {
+  visibility: visible;
+  
+  }
+  .placeimg:hover + .text5Sty {
+  visibility: visible;
+  }
+  .placeimg:hover + .text6Sty {
+  visibility: visible;
+  }
+  .placeimg:hover + .text7Sty {
+  visibility: visible;
+  }
+  .placeimg:hover + .text8Sty {
+  visibility: visible;
+  
+  }
+  
+  @media only screen and (min-width: 768px){
+  .container1{
+    padding-left: 16% !important;
+  }
+  }
+  @media only screen and (min-width: 992px){
+  .container1{
+    padding-left: 8% !important;
+  }
+  } 
